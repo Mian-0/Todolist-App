@@ -151,6 +151,7 @@ body{
     }
     .main-todo-container {
         /* min-width: 100% !important; */
+        margin: 20px;
         
     }
 }
