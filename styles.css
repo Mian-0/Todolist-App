@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    background-image: linear-gradient(to right top, #cc2b5e, #bc2a6d, #a82e7a, #903483, #753a88);
+    height: 100%;
+    width: 100%;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-todo-container{
+    background-color: #fff;
+    width: 500px;
+    margin-top: 1px;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.title-in-todo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-in-todo h1{
+    font-size: 26px;
+    background: -webkit-linear-gradient(left top, #cc2b5e, #bc2a6d, #a82e7a, #903483, #753a88);
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text;
+}
+
+.title-in-todo img{
+    width: 30px;
+}
+
+.adding-task-in-todo-list{
+    padding: 10px 0;
+    display: flex;
+}
+
+.adding-task-in-todo-list input{
+    height: 60px;
+    min-width: 80%;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 30px;
+    font-size: 16px;
+    border: solid 1px white;
+    background-color: #eaecee;
+}
+
+.adding-task-in-todo-list input::placeholder{
+    font-weight: 300 !important;
+    font-size: 14px;
+}
+
+.adding-task-in-todo-list button{
+    background-color: #ff643a;
+    min-width: 30%;
+    border-radius: 30px;
+    transform: translateX(-25px);
+    border: solid 1px white;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.adding-task-in-todo-list button:hover{
+    background-color: #a82e7a;
+}
+
+.main-todos-list{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.main-todos-list ul{
+    list-style: none;
+}
+
+.main-todos-list ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-top: 0;
+    padding-top: 10px;
+    justify-content: space-between;
+    border-top: 2px dotted #eee;
+}
+.main-todos-list ul li .for-li-in-todo-list{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    width: 90%;
+}
+
+.main-todos-list ul li img{
+    width: 35px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.main-todos-list ul li span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #868685;
+}
+
+.main-todos-list ul li .delete-button-in-todo-li {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-todos-list ul li .delete-button-in-todo-li img{
+    width: 20px;
+    filter: invert();
+}
+
+.after-completing-task span{
+    text-decoration: line-through;
+}
+
+
+
+.hide{
+    display: none !important;
+}

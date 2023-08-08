@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site Title -->
+    <title>Todo List</title>
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <!-- Linking Main Css File -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main-todo-container">
+        <div class="title-in-todo">
+            <h1>To-Do List</h1>
+            <img src="images/icon.png" alt="">
+        </div>
+        <div class="adding-task-in-todo-list">
+            <input type="text" placeholder="Add your task" id="TextField">
+            <button id="AddBtn">Add</button>
+        </div>
+        <div class="main-todos-list">
+            <ul id="UlForTodos">
+                <li class="after-completing-task todo-container">
+                    <div class="for-li-in-todo-list">
+                        <img onclick="taskCompleted(this)" src="images/checked.png" alt="">
+                        <span class="spanName">Create a JavaScript Project</span>
+                    </div>
+                    <button class="delete-button-in-todo-li" onclick="taskDeleted(this)"><img src="images/cross.png" alt=""></button>
+                </li>
+                <li class="before-completing-task todo-container">
+                    <div class="for-li-in-todo-list">
+                        <img onclick="taskCompleted(this)" src="images/unchecked.png" alt="">
+                        <span class="spanName">Upload it online</span>
+                    </div>
+                    <button class="delete-button-in-todo-li" onclick="taskDeleted(this)"><img src="images/cross.png" alt=""></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Linking Main Js file -->
+    <script src="main.js"></script>
+  </body>
+</html>
