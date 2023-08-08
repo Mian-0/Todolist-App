@@ -143,7 +143,11 @@ body{
 
 @media screen and (max-width: 768px) {
     body{
-        display: block;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        min-width: 0vh;
+        min-height: 00vh;
     }
     .main-todo-container {
         /* min-width: 100% !important; */
