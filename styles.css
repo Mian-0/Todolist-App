@@ -150,7 +150,6 @@ body{
         min-height: 00vh;
     }
     .main-todo-container {
-        /* min-width: 100% !important; */
         margin: 20px !important;
         
     }
